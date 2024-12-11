@@ -1,5 +1,5 @@
 ---
-name: AccessoryName
+name: New Accessory
 about: Template for creating issues for new accessories
 title: ''
 labels: enhancement
