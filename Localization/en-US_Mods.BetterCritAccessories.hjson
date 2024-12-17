@@ -1,2 +1,6 @@
-# This file will automatically update with entries for new content after a build and reload.
-
+Items: {
+	DiamondJewel: {
+		DisplayName: Diamond Jewel
+		Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+	}
+}
