@@ -1,6 +1,17 @@
+CommonItemTooltip.ChanceForCritHeal: 
+		'''
+		Critical strikes have a {0}% chance to heal you for
+		{1}% of the damage dealt
+		'''
+
 Items: {
 	DiamondJewel: {
 		DisplayName: Diamond Jewel
 		Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+	}
+
+	AdaptiveForce: {
+		DisplayName: Adaptive Force
+		Tooltip: "{$CommonItemTooltip.ChanceForCritHeal}"
 	}
 }
