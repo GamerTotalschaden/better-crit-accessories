@@ -4,6 +4,8 @@ CommonItemTooltip: {
 		Critical strikes have a {0}% chance to heal you for
 		{1}% of the damage dealt
 		'''
+	CritHeal: Critical strikes heal you for {0}% of the damage dealt
+	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 }
 
@@ -25,6 +27,16 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedRangedDamage}
 			{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			'''
+	}
+
+	RestoringNature: {
+		DisplayName: Restoring Nature
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedCritChance}
+			{$CommonItemTooltip.CritHeal@1}
+			{$CommonItemTooltip.NoLifeRegen}
 			'''
 	}
 }
