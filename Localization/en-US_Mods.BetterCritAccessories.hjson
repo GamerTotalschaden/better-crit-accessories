@@ -1,8 +1,11 @@
-CommonItemTooltip.ChanceForCritHeal: 
+CommonItemTooltip: {
+	ChanceForCritHeal:
 		'''
 		Critical strikes have a {0}% chance to heal you for
 		{1}% of the damage dealt
 		'''
+	EnemiesLessLikelyToTarget: Enemies are less likely to target you
+}
 
 Items: {
 	DiamondJewel: {
@@ -13,5 +16,15 @@ Items: {
 	AdaptiveForce: {
 		DisplayName: Adaptive Force
 		Tooltip: "{$CommonItemTooltip.ChanceForCritHeal}"
+	}
+
+	SmellyEmblem: {
+		DisplayName: Smelly Emblem
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedRangedDamage}
+			{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
+			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			'''
 	}
 }
