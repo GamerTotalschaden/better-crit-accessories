@@ -19,7 +19,7 @@ Recommended mods for testing:
 
 ## TODO for Future
 
-* [Rarity](https://terraria.wiki.gg/wiki/Rarity) of Accessories
-* Pricing of Accessories
-* Tweaking/Playtesting
-* Texturing
+[] [Rarity](https://terraria.wiki.gg/wiki/Rarity) of Accessories
+[] Pricing of Accessories
+[] Tweaking/Playtesting
+[] Texturing
