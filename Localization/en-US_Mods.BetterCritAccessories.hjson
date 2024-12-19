@@ -7,6 +7,7 @@ CommonItemTooltip: {
 	CritHeal: Critical strikes heal you for {0}% of the damage dealt
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
+	PercentDecreasedCritDamage: "{0}% decreased critical strike damage"
 }
 
 Items: {
@@ -37,6 +38,15 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedCritChance}
 			{$CommonItemTooltip.CritHeal@1}
 			{$CommonItemTooltip.NoLifeRegen}
+			'''
+	}
+
+	CriticalMastery: {
+		DisplayName: Critical Mastery
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedCritChance}
+			{$CommonItemTooltip.PercentDecreasedCritDamage@1}
 			'''
 	}
 }
