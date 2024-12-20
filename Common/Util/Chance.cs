@@ -1,11 +1,10 @@
 ﻿using System;
+using Terraria;
 
 namespace BetterCritAccessories.Common.Util
 {
     internal class Chance
     {
-        private static readonly Random LOCAL_RANDOM = new Random();
-
         internal static bool Hit(double odds, Random random)
         {
             return random.NextDouble() < odds;
@@ -18,7 +17,7 @@ namespace BetterCritAccessories.Common.Util
 
         internal static bool Hit(double odds)
         {
-            return Chance.Hit(odds, LOCAL_RANDOM);
+            return Chance.Hit(odds, Main.rand);
         }
 
         internal static bool HitPercent(double oddsPercent, Random random)
@@ -33,7 +32,7 @@ namespace BetterCritAccessories.Common.Util
 
         internal static bool HitPercent(double oddsPercent)
         {
-            return Chance.Hit(oddsPercent / 100, LOCAL_RANDOM);
+            return Chance.Hit(oddsPercent / 100, Main.rand);
         }
     }
 }
