@@ -5,10 +5,11 @@ CommonItemTooltip: {
 		{1}% of the damage dealt
 		'''
 	CritHeal: Critical strikes heal you for {0}% of the damage dealt
+	SummonCritHeal: Minion critical strikes heal you for {0}% of the damage dealt
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 	PercentDecreasedCritDamage: "{0}% decreased critical strike damage"
-	PercentIncreasedSummonCritChance: "{0}% increased summon critical strike chance"
+	PercentIncreasedSummonCritChance: "{0}% increased minion critical strike chance"
 }
 
 Items: {
@@ -57,6 +58,18 @@ Items: {
 			'''
 			{$CommonItemTooltip.PercentIncreasedSummonDamage}
 			{$CommonItemTooltip.PercentIncreasedSummonCritChance@1}
+			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			'''
+	}
+
+	AlliedRestoration: {
+		DisplayName: Allied Restoration
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedSummonDamage}
+			{$CommonItemTooltip.PercentIncreasedSummonCritChance@1}
+			{$CommonItemTooltip.SummonCritHeal@2}
+			{$CommonItemTooltip.NoLifeRegen}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
 			'''
 	}
