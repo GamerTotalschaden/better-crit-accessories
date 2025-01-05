@@ -34,8 +34,17 @@ namespace BetterCritAccessories.Common.Systems
                     {
                         continue;
                     }
-                    chest.item[0].SetDefaults(ModContent.ItemType<CriticalMastery>());
-                    chest.item[0].stack = 1;
+
+                    // put item in first free slot of the chest
+                    for (int i = 0; i < Chest.maxItems; ++i)
+                    {
+                        if (chest.item[i].type == ItemID.None)
+                        {
+                            chest.item[i].SetDefaults(ModContent.ItemType<CriticalMastery>());
+                            chest.item[i].stack = 1;
+                            break; // only place 1 item per chest
+                        }
+                    }
                 }
             }
         }
