@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BetterCritAccessories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07424eb83129b714487bdf7ca82f0d766b6e6bbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11a4a075fb514783fd759693cf53e02e0d4623e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BetterCritAccessories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BetterCritAccessories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
