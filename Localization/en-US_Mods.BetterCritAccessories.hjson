@@ -9,7 +9,7 @@ CommonItemTooltip: {
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 	PercentDecreasedCritDamage: "{0}% decreased critical strike damage"
-	PercentIncreasedSummonCritChance: "{0}% increased minion critical strike chance"
+	MinionCritChance: Summoned minions have a {0}% critical strike chance
 }
 
 Items: {
@@ -57,7 +57,7 @@ Items: {
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PercentIncreasedSummonDamage}
-			{$CommonItemTooltip.PercentIncreasedSummonCritChance@1}
+			{$CommonItemTooltip.MinionCritChance@1}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
 			'''
 	}
@@ -67,7 +67,7 @@ Items: {
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PercentIncreasedSummonDamage}
-			{$CommonItemTooltip.PercentIncreasedSummonCritChance@1}
+			{$CommonItemTooltip.MinionCritChance@1}
 			{$CommonItemTooltip.SummonCritHeal@2}
 			{$CommonItemTooltip.NoLifeRegen}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
