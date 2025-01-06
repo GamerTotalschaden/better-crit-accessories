@@ -30,8 +30,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetDamage(DamageClass.Summon) += SUMMON_DAMAGE_INCREASE_PERCENT / 100;
-            // TODO make minions be able to crit and check if the following is even useful
-            player.GetCritChance(DamageClass.Summon) += SUMMON_CRIT_CHANCE_INCREASE_PERCENT;
+            player.GetModPlayer<MinionCritPlayer>().CRIT_CHANCE_PERCENT += SUMMON_CRIT_CHANCE_INCREASE_PERCENT;
             // TODO heal on crit (idea: therefore: add additional chance and heal increase percentage per class
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true; // life regen is 0
             player.aggro -= 400; // enemies are less likely to target you

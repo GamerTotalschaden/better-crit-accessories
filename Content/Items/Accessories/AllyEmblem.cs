@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using BetterCritAccessories.Common.Players;
+using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -25,7 +26,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetDamage(DamageClass.Summon) += SUMMON_DAMAGE_INCREASE_PERCENT / 100;
-            player.GetCritChance(DamageClass.Summon) += SUMMON_CRIT_CHANCE_INCREASE_PERCENT;
+            player.GetModPlayer<MinionCritPlayer>().CRIT_CHANCE_PERCENT += SUMMON_CRIT_CHANCE_INCREASE_PERCENT;
             player.aggro -= 400; // enemies are less likely to target you, same as Putrid Scent
         }
 
