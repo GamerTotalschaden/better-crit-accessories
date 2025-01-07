@@ -8,6 +8,7 @@ CommonItemTooltip: {
 	SummonCritHeal: Minion critical strikes heal you for {0}% of the damage dealt
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
+	PercentIncreasedCritDamage: "{0}% increased critical strike damage"
 	PercentDecreasedCritDamage: "{0}% decreased critical strike damage"
 	MinionCritChance: Summoned minions have a {0}% critical strike chance
 }
@@ -71,6 +72,26 @@ Items: {
 			{$CommonItemTooltip.SummonCritHeal@2}
 			{$CommonItemTooltip.NoLifeRegen}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			'''
+	}
+
+	CritPotion: {
+		DisplayName: Critical Potion
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedCritChance}
+			{$CommonItemTooltip.PercentIncreasedCritDamage@1}
+			'''
+	}
+}
+
+Buffs: {
+	CritPotionBuff: {
+		DisplayName: Critical Buff
+		Description:
+			'''
+			{$CommonItemTooltip.PercentIncreasedCritChance}
+			{$CommonItemTooltip.PercentIncreasedCritDamage@1}
 			'''
 	}
 }
