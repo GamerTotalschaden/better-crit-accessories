@@ -12,12 +12,6 @@ Useful resources for development:
 * [ModPlayer Class Reference](https://docs.tmodloader.net/docs/1.4-preview/class_terraria_1_1_mod_loader_1_1_mod_player.html)
 * [Localization (for tooltips)](https://github.com/tModLoader/tModLoader/wiki/Localization#existing-item-tooltips)
 
-Broadcasting a chat message for debugging:
-
-```csharp
-ChatHelper.BroadcastChatMessage(Terraria.Localization.NetworkText.FromLiteral("message"), new Microsoft.Xna.Framework.Color(0, 255, 0));
-```
-
 Recommended mods for testing:
 
 * [Cheat Sheet](https://steamcommunity.com/sharedfiles/filedetails/?id=2563784437)
