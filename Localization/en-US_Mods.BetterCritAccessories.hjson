@@ -94,6 +94,11 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedCritDamage@1}
 			'''
 	}
+
+	CriticalStinger: {
+		DisplayName: Critical Stinger
+		Tooltip: "TODO"
+	}
 }
 
 Buffs: {
