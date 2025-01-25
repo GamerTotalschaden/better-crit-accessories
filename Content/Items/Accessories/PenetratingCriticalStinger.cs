@@ -19,7 +19,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
             Item.height = 20;
 
             Item.value = Item.buyPrice(gold: 1);
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.Lime;
 
             Item.accessory = true;
         }
