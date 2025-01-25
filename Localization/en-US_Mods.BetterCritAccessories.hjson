@@ -6,6 +6,7 @@ CommonItemTooltip: {
 		'''
 	CritHeal: Critical strikes heal you for {0}% of the damage dealt
 	SummonCritHeal: Minion critical strikes heal you for {0}% of the damage dealt
+	RangedCritHeal: Ranged critical strikes heal you for {0}% of the damage dealt
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 	PercentIncreasedCritDamage: "{0}% increased critical strike damage"
@@ -120,6 +121,18 @@ Items: {
 			{$CommonItemTooltip.PanicOnCrit}
 			{$CommonItemTooltip.GiantBeeOnCrit}
 			{$CommonItemTooltip.PercentIncreasedCritChance@1}
+			'''
+	}
+
+	PreciseRestoration: {
+		DisplayName: Precise Restoration
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedRangedDamage}
+			{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
+			{$CommonItemTooltip.RangedCritHeal@2}
+			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			{$CommonItemTooltip.NoLifeRegen}
 			'''
 	}
 }
