@@ -119,7 +119,7 @@ Items: {
 			{$CommonItemTooltip.ArmorPenIncrease}
 			{$CommonItemTooltip.PanicOnCrit}
 			{$CommonItemTooltip.GiantBeeOnCrit}
-			{$CommonItemTooltip.PercentIncreasedCritChance}
+			{$CommonItemTooltip.PercentIncreasedCritChance@1}
 			'''
 	}
 }
