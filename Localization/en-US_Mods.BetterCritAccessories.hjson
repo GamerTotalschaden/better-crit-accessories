@@ -7,6 +7,8 @@ CommonItemTooltip: {
 	CritHeal: Critical strikes heal you for {0}% of the damage dealt
 	SummonCritHeal: Minion critical strikes heal you for {0}% of the damage dealt
 	RangedCritHeal: Ranged critical strikes heal you for {0}% of the damage dealt
+	MagicCritHeal: Magic critical strikes heal you for {0}% of the damage dealt
+	CritMana: Magic critical strikes restore {0}% of the damage dealt as mana
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 	PercentIncreasedCritDamage: "{0}% increased critical strike damage"
@@ -21,6 +23,7 @@ CommonItemTooltip: {
 		Releases a giant bee and douses the user in honey on critical strike
 		Damage of this bee is doubled if Hive Pack is also equipped
 		'''
+	ManaFlower: Automatically use mana potions when needed
 }
 
 Items: {
@@ -131,6 +134,19 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedRangedDamage}
 			{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
 			{$CommonItemTooltip.RangedCritHeal@2}
+			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
+			{$CommonItemTooltip.NoLifeRegen}
+			'''
+	}
+
+	ArcaneRestoration: {
+		DisplayName: Arcane Restoration
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedMagicCritChance}
+			{$CommonItemTooltip.MagicCritHeal@1}
+			{$CommonItemTooltip.CritMana@2}
+			{$CommonItemTooltip.ManaFlower}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
 			{$CommonItemTooltip.NoLifeRegen}
 			'''
