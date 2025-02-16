@@ -28,8 +28,8 @@ namespace BetterCritAccessories.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetCritChance(DamageClass.Generic) += CRIT_CHANCE_INCREASE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent = HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage = HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
+            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true;
         }
 
