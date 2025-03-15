@@ -31,9 +31,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         {
             player.GetDamage(DamageClass.Summon) += SUMMON_DAMAGE_INCREASE_PERCENT / 100;
             player.GetModPlayer<MinionCritPlayer>().CRIT_CHANCE_PERCENT += SUMMON_CRIT_CHANCE_INCREASE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += 100;
-            player.GetModPlayer<HealOnCritPlayer>().OnlyAffectedClass = DamageClass.Summon;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += SUMMON_HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Summon, SUMMON_HEAL_PERCENTAGE_OF_DAMAGE);
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true; // life regen is 0
             player.aggro -= 400; // enemies are less likely to target you
         }

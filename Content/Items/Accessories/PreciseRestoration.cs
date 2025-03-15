@@ -10,7 +10,6 @@ namespace BetterCritAccessories.Content.Items.Accessories
     {
         public static readonly float RANGED_DAMAGE_INCREASE_PERCENT = 15;
         public static readonly float RANGED_CRIT_CHANCE_INCREASE_PERCENT = 10;
-        public static readonly float HEAL_CHANCE_PERCENT = 100;
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 5;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(
@@ -31,9 +30,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         {
             player.GetDamage(DamageClass.Ranged) += RANGED_DAMAGE_INCREASE_PERCENT / 100;
             player.GetCritChance(DamageClass.Ranged) += RANGED_CRIT_CHANCE_INCREASE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().OnlyAffectedClass = DamageClass.Ranged;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Ranged, HEAL_PERCENTAGE_OF_DAMAGE);
             player.aggro -= 400; // enemies are less likely to target you, same as Putrid Scent
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true;
         }

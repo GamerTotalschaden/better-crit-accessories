@@ -9,7 +9,6 @@ namespace BetterCritAccessories.Content.Items.Accessories
     public class ArcaneRestoration : ModItem
     {
         public static readonly float MAGIC_CRIT_CHANCE_INCREASE_PERCENT = 10;
-        public static readonly float HEAL_CHANCE_PERCENT = 100;
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 2.5f;
         public static readonly float MANA_CHANCE_PERCENT = 100;
         public static readonly float MANA_PERCENTAGE_OF_DAMAGE = 2.5f;
@@ -34,9 +33,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetCritChance(DamageClass.Magic) += MAGIC_CRIT_CHANCE_INCREASE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().OnlyAffectedClass = DamageClass.Magic;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Magic, HEAL_PERCENTAGE_OF_DAMAGE);
             player.GetModPlayer<ManaOnCritPlayer>().ManaChancePercent += MANA_CHANCE_PERCENT;
             player.GetModPlayer<ManaOnCritPlayer>().ManaPercentageOfDamage += MANA_PERCENTAGE_OF_DAMAGE;
             player.manaFlower = true;

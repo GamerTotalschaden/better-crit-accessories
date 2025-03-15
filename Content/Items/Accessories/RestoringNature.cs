@@ -9,7 +9,6 @@ namespace BetterCritAccessories.Content.Items.Accessories
     public class RestoringNature : ModItem
     {
         public static readonly float CRIT_CHANCE_INCREASE_PERCENT = 5; // same as Diamond Jewel
-        public static readonly float HEAL_CHANCE_PERCENT = 100; // always heals on crit
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 5;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CRIT_CHANCE_INCREASE_PERCENT, HEAL_PERCENTAGE_OF_DAMAGE);
@@ -28,8 +27,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetCritChance(DamageClass.Generic) += CRIT_CHANCE_INCREASE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Generic, HEAL_PERCENTAGE_OF_DAMAGE);
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true;
         }
 

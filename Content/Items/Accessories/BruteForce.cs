@@ -10,7 +10,6 @@ namespace BetterCritAccessories.Content.Items.Accessories
     {
         public static readonly float MELEE_DAMAGE_AND_SPEED_INCREASE_PERCENT = 12;
         public static readonly float MELEE_CRIT_CHANCE_INCREASE_PERCENT = 10;
-        public static readonly float HEAL_CHANCE_PERCENT = 100; // always heals on crit
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 5;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(
@@ -37,9 +36,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
             player.autoReuseGlove = true; // enables autoswing
             player.meleeScaleGlove = true; // increases weapon size by 10%
             // Restoring Nature (for Melee)
-            player.GetModPlayer<HealOnCritPlayer>().OnlyAffectedClass = DamageClass.Melee;
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Melee, HEAL_PERCENTAGE_OF_DAMAGE);
             player.GetModPlayer<NoLifeRegenPlayer>().NoLifeRegen = true;
         }
 

@@ -26,8 +26,7 @@ namespace BetterCritAccessories.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetModPlayer<HealOnCritPlayer>().HealChancePercent += HEAL_CHANCE_PERCENT;
-            player.GetModPlayer<HealOnCritPlayer>().HealPercentageOfDamage += HEAL_PERCENTAGE_OF_DAMAGE;
+            player.GetModPlayer<HealOnCritPlayer>().AddCritHeal(DamageClass.Generic, HEAL_CHANCE_PERCENT, HEAL_PERCENTAGE_OF_DAMAGE);
         }
 
         public override void AddRecipes()
