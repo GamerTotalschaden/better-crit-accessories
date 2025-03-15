@@ -8,6 +8,7 @@ CommonItemTooltip: {
 	SummonCritHeal: Minion critical strikes heal you for {0}% of the damage dealt
 	RangedCritHeal: Ranged critical strikes heal you for {0}% of the damage dealt
 	MagicCritHeal: Magic critical strikes heal you for {0}% of the damage dealt
+	MeleeCritHeal: Melee critical strikes heal you for {0}% of the damage dealt
 	CritMana: Magic critical strikes restore {0}% of the damage dealt as mana
 	NoLifeRegen: Your life regeneration is 0
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
@@ -166,6 +167,21 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedMeleeDamageAndSpeed@1}
 			{$CommonItemTooltip.AutoSwingMelee}
 			{$CommonItemTooltip.SizeIncreaseMelee}
+			{$CommonItemTooltip.CannotBeUsedWithFireGauntlet}
+			'''
+	}
+
+	BruteForce: {
+		DisplayName: Brute Force
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedMeleeCritChance}
+			{$CommonItemTooltip.IncreasesMeleeKnockback}
+			{$CommonItemTooltip.PercentIncreasedMeleeDamageAndSpeed@1}
+			{$CommonItemTooltip.AutoSwingMelee}
+			{$CommonItemTooltip.SizeIncreaseMelee}
+			{$CommonItemTooltip.MeleeCritHeal@2}
+			{$CommonItemTooltip.NoLifeRegen}
 			{$CommonItemTooltip.CannotBeUsedWithFireGauntlet}
 			'''
 	}
