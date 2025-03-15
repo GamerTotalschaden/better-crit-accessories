@@ -13,6 +13,7 @@ CommonItemTooltip: {
 	EnemiesLessLikelyToTarget: Enemies are less likely to target you
 	PercentIncreasedCritDamage: "{0}% increased critical strike damage"
 	PercentDecreasedCritDamage: "{0}% decreased critical strike damage"
+	PercentIncreasedMeleeDamageAndSpeed: "{0}% increased melee damage and speed"
 	MinionCritChance: Summoned minions have a {0}% critical strike chance
 	SharktoothNecklace: Increases armor penetration by 5
 	ArmorPenIncrease: Increases armor penetration by {0}
@@ -24,6 +25,10 @@ CommonItemTooltip: {
 		Damage of this bee is doubled if Hive Pack is also equipped
 		'''
 	ManaFlower: Automatically use mana potions when needed
+	IncreasesMeleeKnockback: Increases melee knockback
+	CannotBeUsedWithFireGauntlet: Cannot be used with Fire Gauntlet
+	AutoSwingMelee: Enables auto swing for melee weapons
+	SizeIncreaseMelee: Increases the size of melee weapons
 }
 
 Items: {
@@ -149,6 +154,19 @@ Items: {
 			{$CommonItemTooltip.ManaFlower}
 			{$CommonItemTooltip.EnemiesLessLikelyToTarget}
 			{$CommonItemTooltip.NoLifeRegen}
+			'''
+	}
+
+	PutridGlove: {
+		DisplayName: Putrid Glove
+		Tooltip:
+			'''
+			{$CommonItemTooltip.PercentIncreasedMeleeCritChance}
+			{$CommonItemTooltip.IncreasesMeleeKnockback}
+			{$CommonItemTooltip.PercentIncreasedMeleeDamageAndSpeed@1}
+			{$CommonItemTooltip.AutoSwingMelee}
+			{$CommonItemTooltip.SizeIncreaseMelee}
+			{$CommonItemTooltip.CannotBeUsedWithFireGauntlet}
 			'''
 	}
 }
