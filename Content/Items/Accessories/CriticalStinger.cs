@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class CriticalStinger : ModItem
+    public class CriticalStinger : MutexModItem
     {
         public override void SetDefaults()
         {

@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class AdaptiveForce : ModItem
+    public class AdaptiveForce : MutexModItem
     {
         public static readonly float HEAL_CHANCE_PERCENT = 20;
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 5;

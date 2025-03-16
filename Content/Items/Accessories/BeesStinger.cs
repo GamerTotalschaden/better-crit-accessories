@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class BeesStinger : ModItem
+    public class BeesStinger : MutexModItem
     {
         public override void SetDefaults()
         {

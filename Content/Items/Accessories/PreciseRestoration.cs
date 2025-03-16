@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class PreciseRestoration : ModItem
+    public class PreciseRestoration : MutexModItem
     {
         public static readonly float RANGED_DAMAGE_INCREASE_PERCENT = 15;
         public static readonly float RANGED_CRIT_CHANCE_INCREASE_PERCENT = 10;

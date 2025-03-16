@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class PenetratingCriticalStinger : ModItem
+    public class PenetratingCriticalStinger : MutexModItem
     {
         public static readonly float ARMOR_PEN_INCREASE = 7;
         public static readonly float CRIT_CHANCE_INCREASE_PERCENT = 10;

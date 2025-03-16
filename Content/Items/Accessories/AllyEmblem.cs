@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class AllyEmblem : ModItem
+    public class AllyEmblem : MutexModItem
     {
         public static readonly float SUMMON_DAMAGE_INCREASE_PERCENT = 15;
         public static readonly float SUMMON_CRIT_CHANCE_INCREASE_PERCENT = 5;

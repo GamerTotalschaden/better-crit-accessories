@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class ArcaneRestoration : ModItem
+    public class ArcaneRestoration : MutexModItem
     {
         public static readonly float MAGIC_CRIT_CHANCE_INCREASE_PERCENT = 10;
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 2.5f;

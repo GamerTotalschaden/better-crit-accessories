@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class SmellyEmblem : ModItem
+    public class SmellyEmblem : MutexModItem
     {
         public static readonly float RANGED_DAMAGE_INCREASE_PERCENT = 15;
         public static readonly float RANGED_CRITCHANCE_INCREASE_PERCENT = 5;

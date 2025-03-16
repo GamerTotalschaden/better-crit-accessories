@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class RestoringNature : ModItem
+    public class RestoringNature : MutexModItem
     {
         public static readonly float CRIT_CHANCE_INCREASE_PERCENT = 5; // same as Diamond Jewel
         public static readonly float HEAL_PERCENTAGE_OF_DAMAGE = 5;

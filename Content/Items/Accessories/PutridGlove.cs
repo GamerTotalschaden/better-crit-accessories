@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace BetterCritAccessories.Content.Items.Accessories
 {
-    public class PutridGlove : ModItem
+    public class PutridGlove : MutexModItem
     {
         public static readonly float MELEE_DAMAGE_AND_SPEED_INCREASE_PERCENT = 12;
         public static readonly float MELEE_CRIT_CHANCE_INCREASE_PERCENT = 7;
@@ -38,6 +38,11 @@ namespace BetterCritAccessories.Content.Items.Accessories
 
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
+            if (!base.CanAccessoryBeEquippedWith(equippedItem, incomingItem, player))
+            {
+                return false;
+            }
+
             // cannot be used with Fire Gauntlet
             if (incomingItem.type == ItemID.FireGauntlet)
             {
